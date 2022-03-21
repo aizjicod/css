@@ -1,0 +1,37 @@
+*{
+    font-family: 'Inspiration', cursive;
+}
+
+
+.nav__responsive-ul{
+    display:none;
+}
+
+.nav__ul{
+    background-color:lightgray;
+    padding: 30px;
+    text-align:right;
+}
+.nav__li{
+    display:inline-block;
+    color:#fff;
+    margin-right:30px;
+}
+.nav__li i{
+    box-sizing: border-box;
+}
+
+.nav__li a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.nav__li:hover > a ,.nav__li:hover > i {
+    color:blueviolet;
+}
+
+@media only screen and (max-width:500px){
+.nav__ul{
+    display:none;
+}
+}

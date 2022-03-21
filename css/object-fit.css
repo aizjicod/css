@@ -1,0 +1,31 @@
+*{
+    font-family: 'Inspiration', cursive;
+}
+
+div{
+    width: 300px;
+    height: 500px ;
+    background:grey;
+    border:5px solid red;
+}
+
+.caja img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+.caja1 img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.caja2 img{
+    width:100%;
+    height:100%;
+    object-fit: none;
+}
+.caja3 img{
+    width:100%;
+    height:100%;
+    object-fit: scale-down;
+}

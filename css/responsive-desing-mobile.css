@@ -1,0 +1,15 @@
+*{
+    font-family: 'Inspiration', cursive;
+}
+
+div{
+    width:45%;
+    display:inline-block;
+}
+
+@media only screen and (max-width: 500px) {
+    div{
+        width:100%;
+        display:block;
+    }
+}
