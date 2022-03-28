@@ -1,12 +1,13 @@
 *{
     font-family: 'Inspiration', cursive;
+    margin: 0;
+    padding: 0;
 }
-
-
 .nav__responsive-ul{
     display:none;
 }
 
+/*i will be giving the first nav some style for the windowdesk*/
 .nav__ul{
     background-color:lightgray;
     padding: 30px;
@@ -30,8 +31,38 @@
     color:blueviolet;
 }
 
-@media only screen and (max-width:500px){
+/*i will be given the stylle for the responsive desing*/
+
+.nav__responsive-ul{
+    background:rgb(122, 66, 133);
+    color:white;
+    width:100vw;
+    padding:1.2em;
+    text-align:center;
+}
+
+.nav__responsive-li{
+    display:inline-block;
+    margin:7px;
+}
+
+.nav__responsive-li a{
+    color:white;
+    text-decoration:none;
+}
+
+.nav__responsive-li:hover > a ,.nav__responsive-li:hover > i {
+    color:rgb(128, 36, 41);
+}
+
+
+
+@media only screen and (max-width:700px){
 .nav__ul{
     display:none;
 }
+.nav__responsive-ul{
+    display: inline-block;
+}
+
 }
