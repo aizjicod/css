@@ -1,3 +1,34 @@
 *{
     font-family: 'Inspiration', cursive;
 }
+#container-box1{
+    display: flex;
+    flex-flow: wrap row;
+}
+#container-box2{
+    display: flex;
+    flex-flow: wrap row;
+    
+}
+#container-box2 .roja{
+    flex:1 0 90px;
+}
+
+
+.box{
+    width: 100px;
+    height: 100px;
+    color:#fff;
+}
+.verde{
+    background:#04ff55;
+}
+
+.roja{
+    background:#d00808;
+}
+.azul{
+    background:#410cc0;
+    
+}
+
