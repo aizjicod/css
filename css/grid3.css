@@ -1,0 +1,47 @@
+*{
+    font-family: 'Inspiration', cursive;
+    margin:0;
+    padding:0;
+}
+
+#grid-container{
+    background:#222;
+    display:grid;
+    border: 2px solid #000;
+    height: 92vh;
+    padding:20px;
+    grid-template-areas: 
+    "header header header"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "footer footer footer";
+    grid-template-rows:repeat(auto-fill,1fr)
+}
+
+.grid-item{
+    padding:20px;
+    border:2px solid #000;
+}
+
+.grid-header{
+    background:#f80;
+    grid-area: header;
+}
+
+.grid-main{
+    background:#f0f;
+    grid-area:main;
+}
+
+.grid-aside{
+    background:#09f;
+    grid-area:aside;
+}
+
+.grid-footer{
+    background:#0b8;
+    grid-area:footer;
+}
