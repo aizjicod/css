@@ -1,0 +1,12 @@
+*{
+    font-family: 'Inspiration', cursive;
+}
+.div-responsive{
+    background:#90f;
+}
+
+@media  screen and (max-width:600px) {
+    .div-responsive{
+        background:#0ff;
+    }
+}
