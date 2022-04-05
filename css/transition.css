@@ -1,0 +1,44 @@
+*{
+    font-family: 'Inspiration', cursive;
+    margin:0;
+    padding:0;
+    font-weight: 100;
+}
+
+
+
+.box{
+    margin-bottom: 30px ;
+    background: #808;
+    width:70px;
+    height:70px;
+    transition:background, left, 1s, 1s;
+    position:relative;
+    left:0;
+}
+
+#main:hover>.box{
+    left:85%;
+    background:#098;
+}
+
+.box:first-child{
+    transition-timing-function: linear;
+}
+
+.box:nth-child(2){
+    transition-timing-function:ease;
+}
+
+.box:nth-child(3){
+    transition-timing-function: ease-in;
+}
+
+.box:nth-child(4){
+    transition-timing-function: ease-out;
+}
+
+.box:last-child{
+    transition-timing-function: ease-in-out;
+}
+

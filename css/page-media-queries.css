@@ -13,20 +13,17 @@ body{
 #main{
     display: flex;
     flex-direction: column;
+    width:100vw;
     height:100vh;
-    
 }
 
 header, .content, aside, footer{
     padding:20px;
 }
 
-
-
 .header{
     background: #3d3a50;
-
-    flex-basis:60px;
+    flex-basis:50px;
 
 }
 
@@ -40,7 +37,7 @@ header, .content, aside, footer{
 .aside{
     background:#0ea2f6;
     color:#fcf;
-    flex: 1 0 200px;
+    flex: 1 0 150px;
    
 }
 
@@ -48,3 +45,28 @@ header, .content, aside, footer{
     background:#3d3a50;
     flex:1;
 }
+
+@media  screen and (min-width:700px) {
+    #main{
+        display:grid;
+        grid-template-rows: 60px 1fr 1fr 1fr 1fr 60px;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .header{
+        grid-column:1/span 3;
+    }
+    .content{
+        grid-column:1/span 2;
+        grid-row: 2/ span 6;
+    }
+    .aside{
+        grid-column:3/4;
+        grid-row: 2/ span 6;
+    }
+
+    .footer{
+        grid-column:1/span 3;
+        grid-row:  6/  7;
+    }
+}   
+
