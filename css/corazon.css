@@ -1,0 +1,48 @@
+*{
+    font-family: 'Inspiration', cursive;
+    margin:0;
+    padding:0;
+    font-weight: 100;
+}
+.heart{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top:25px
+
+}
+.left-top, .left-botton, .rigth-top, .rigth-botton{
+    width: 100px;
+    height: 100px;
+    background:#808;
+    position:relative;
+}
+
+.left-top{
+    transform: translate(3px);
+    border-radius:100%;
+    animation: movement 3s forwards;
+}
+.left-botton{
+    transform: translateY(-35px);
+    clip-path: polygon(5% 0, 100% 0, 100% 100%, 76% 85%, 48% 64%, 26% 43%, 10% 18%);
+    animation: movement 3s forwards;
+}
+
+.rigth-top{
+    transform: translate(-3px);
+    border-radius: 100%;
+}
+.rigth-botton{
+    transform: translate(0, -35px);
+    clip-path: polygon(95% 0, 0 0, 0 100%, 24% 85%, 49% 66%, 66% 49%, 81% 26%);
+}
+
+@keyframes movement {
+    0%{
+        left:0
+    }
+    100%{
+        left:241px;
+    }
+    
+}

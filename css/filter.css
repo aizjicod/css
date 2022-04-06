@@ -1,0 +1,33 @@
+*{
+    font-family: 'Inspiration', cursive;
+    margin:0;
+    padding:0;
+    font-weight: 100;
+}
+
+#main{
+    filter: contrast(30);
+    background:#fff;
+}
+
+.box{
+    background:#f0f;
+    margin:50px;
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    display:inline-block;
+    filter:blur(30px);
+}
+.box:first-child{
+    animation: gote 1s  alternate  infinite ;
+}
+
+@keyframes gote {
+    from{
+        transform: translate(0)
+    }
+    to{
+        transform:translate(120px)
+    }
+}
