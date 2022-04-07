@@ -1,0 +1,59 @@
+*{
+    font-family: 'Inspiration', cursive;
+    margin:0;
+    padding:0;
+    font-weight: 100;
+    border:none;
+    box-sizing: border-box;
+}
+
+body{
+    padding-bottom:1000em;
+}
+
+.footer{
+    height: 700px;
+    width:100%;
+    background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGKq-DysOSEm7ymXqjJkeAgcAghT2PT2PRSA&usqp=CAU) no-repeat center fixed; 
+    background-size:cover;
+    
+
+    display:flex;
+    align-items: center;
+    
+}
+
+.footer p, .footer h1{
+    color:#fff;
+    margin-bottom:10px
+    
+}
+.banner h1{
+    font-size:3.5em;
+}
+
+.banner__button{
+    background:#777;
+    width:200px;
+    padding:10px 20px;
+    margin:auto;
+    margin-top:20px;
+    color:#000;
+    font-size:1.3em;
+    text-transform: capitalize;
+    border-radius: 50px;
+}
+
+.banner__button:hover{
+    background:linear-gradient(#777, #bbb);    
+}
+.banner__button:active{
+    background:linear-gradient(#777, #bbb); 
+    transform:scale(0.9)
+}
+
+.banner{
+    width: 80%;
+    margin:auto;
+}
+
